@@ -1,0 +1,215 @@
+.jumbotron {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 759px;
+    background: #292929;
+    text-align: center;
+    background-image: linear-gradient(rgba(3, 3, 3, 0.288),rgba(3, 3, 3, 0.288)),
+    url(./css_imgs/road_forest.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.left-Button,
+.right-Button {
+    width: 23px;
+    height: 37px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.left-Button  {
+    left: 50px;
+    top: 111px;
+    position: absolute;
+    content: url(./css_imgs/prev_arrow.svg);
+    fill: #ffffff; 
+}
+
+.right-Button {
+    margin-left: 255px;
+    position: absolute;
+    right: 71px;
+    top: 111px;
+    content: url(./css_imgs/next_arrow.svg);
+}
+
+ .jumbotron .wrapper .text {
+    position: relative;
+    z-index: 3;
+    margin-bottom: 13px;
+  }
+   
+.jumbotron .wrapper .text h4 {
+    margin-bottom: -1px;
+    margin-left: 16px;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 62px;
+    font-weight: 100;
+    word-spacing: -2px;
+  }
+
+  .jumbotron .wrapper .text h3 {
+    margin-bottom: 6px;
+    margin-left: 9px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 74px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    word-spacing: -9px;
+  }
+  
+.jumbotron .wrapper .text p {
+    margin-bottom: 45px;
+    margin-left: 17px;
+    color: #ffffffa4;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -.1px;
+  }
+  
+.jumbotron .wrapper .text .mobile {
+    display: none;
+  }
+
+.jumbotron .wrapper .text a {
+    display: inline-block;
+    margin-left: 24px;
+    padding: 11px 30px 12px;
+    border: 1px solid #ffffff;
+    outline: 3px solid #3AB6B2;
+    background: #3AB6B2;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* fonts and arrows*/
+@media screen and (max-width: 1024px) {
+  .left-Button,
+  .right-Button {
+      display: none;
+  }
+  .jumbotron .wrapper .text h4 {
+    font-size: 50px;
+    word-spacing: 2px;
+    letter-spacing: 0.2;
+  }
+  .jumbotron .wrapper .text h3 {
+    font-size: 62px;
+    word-spacing: 2px;
+    letter-spacing: 0.2;
+  }
+  .jumbotron .wrapper .text p {
+    display: none;
+  }
+  .jumbotron .wrapper .text .mobile {
+    display: block;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .jumbotron .wrapper .text h4 {
+    font-size: 40px;
+    word-spacing: 2px;
+    letter-spacing: 0.2;
+  }
+  .jumbotron .wrapper .text h3 {
+    font-size: 52px;
+    word-spacing: 2px;
+    letter-spacing: 0.2;
+  }
+  .jumbotron .wrapper .text p {
+    display: none;
+  }
+  .jumbotron .wrapper .text .mobile {
+    display: block;
+    font-size: 15px;
+  }
+  .jumbotron .wrapper .text a {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .1px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+} 
+
+@media screen and (max-width: 767px) {
+  .jumbotron .wrapper .text h4 {
+    font-size: 30px;
+    word-spacing: 2px;
+    letter-spacing: 0.2;
+  }
+  .jumbotron .wrapper .text h3 {
+    font-size: 42px;
+    word-spacing: 2px;
+    letter-spacing: 0.2;
+  }
+  .jumbotron .wrapper .text p {
+    display: none;
+  }
+  .jumbotron .wrapper .text .mobile {
+    display: block;
+    font-size: 10px;
+  }
+  .jumbotron .wrapper .text a {
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: .1px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .jumbotron {
+    height: auto;
+  }
+} 
+
+@media screen and (max-width: 320px) {
+  .jumbotron .wrapper .text h4 {
+    font-size: 20px;
+    word-spacing: 2px;
+    letter-spacing: 0.2;
+  }
+  .jumbotron .wrapper .text h3 {
+    font-size: 32px;
+    word-spacing: 2px;
+    letter-spacing: 0.2;
+  }
+  .jumbotron .wrapper .text p {
+    display: none;
+  }
+  .jumbotron .wrapper .text .mobile {
+    display: block;
+    font-size: 8px;
+  }
+  .jumbotron .wrapper .text a {
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: .1px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .jumbotron {
+    height: auto;
+  }
+} 
+
+

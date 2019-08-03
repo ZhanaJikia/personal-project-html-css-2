@@ -1,0 +1,122 @@
+footer {
+    width: 100%;
+    height: 300px;
+    padding-top: 46px;
+    background-color: #111111;
+}
+
+.footer_icon {
+    display: flex;
+    width: 123px;
+    height: 42px;
+    margin: 0 auto;
+}
+
+.footer-h {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: .6px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer-h::before {
+    content: '';
+    display: inline-block;
+    width: 27px;
+    min-height: 41.px;
+    margin-right: -1px;
+    content: url(./css_imgs/logo.png);
+    background-repeat: no-repeat;
+}
+
+.footer_icons {
+    width: 294px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.footer_mail {
+    height: 40px;
+    width: 40px;
+    content: url(./css_imgs/footer-meil.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 1px;
+    margin-left: 4px;
+    padding: 14px 13px 14px 13px;
+    border-radius: 3px;
+    background-color: #252525;
+    cursor: pointer;
+}
+
+.footer_tw {
+    content: url(./css_imgs/Twitter.png);
+    background-repeat: no-repeat;
+    padding: 12px 10px 13px 15px;  
+}
+
+.footer_fb {
+    content: url(./css_imgs/Facebook.png);
+    background-repeat: no-repeat;   
+    padding: 12px 14px 13px 19px;   
+}
+
+.footer_be {
+    content: url(./css_imgs/BE.png);
+    background-repeat: no-repeat;
+    padding: 15px 10px 15px 12px;
+}
+
+.deviantart {
+    content: url(./css_imgs/Deviantart.png);
+    background-repeat: no-repeat;      
+}
+
+.footer_flickr {
+    content: url(./css_imgs/Flickr.png);
+    background-repeat: no-repeat;  
+    padding: 15px 10px 15px 9px;    
+} 
+
+.footer_p {
+    margin-top: 45px;
+    color: #ffffff;
+    font-family: 'Raleway Light', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .19px;
+    text-align: center;
+}
+
+.footer ul li{
+    display:inline-block;
+}
+
+.footer_icons a:hover {
+    background-color: #46629E;
+}
+
+
+@media screen and (max-width: 460px){
+    .footer_icons {
+        display: grid;
+        grid-gap: 3%;
+        grid-row-gap: 10%;
+        grid-template-columns: repeat(3, 1fr);
+        width: 30%;
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+    .footer_p {
+        margin-top: 5%;
+        padding-bottom: 10%;
+    }
+    footer {
+        height: auto;
+        margin: auto;
+    }
+}
