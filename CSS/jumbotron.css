@@ -101,7 +101,7 @@
 
 
 /* fonts and arrows*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .left-Button,
   .right-Button {
       display: none;

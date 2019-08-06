@@ -30,8 +30,8 @@
 }
 
 .polygon {
+    position: relative;
     width: 295px;
-    justify-content: center;
     align-items: center;
     margin-bottom: 150px;
 }
@@ -44,6 +44,7 @@
     margin-bottom: 25px;
     margin-left: 25%;
     background-image: url(./css_imgs/polygon.svg);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -56,15 +57,16 @@
 
 .polygon::after {
     content: '';
-    display: block;
-    width: 136px;
-    height: 163px;
-    margin-top: -105%;
-    position: relative;
-    margin-left: 25%;
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: -12.7px;
+    width: 28px;
+    height: 26px;
+    margin: 0 auto;
     background-image: url(./css_imgs/stat.svg);
     background-repeat: no-repeat;
-    background-position: center; 
 }
 
 .polygon.people::after {
@@ -114,7 +116,7 @@
     }
 }
 
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1200px){
     .services_wrap {
         display: flex;
         flex-direction: column;

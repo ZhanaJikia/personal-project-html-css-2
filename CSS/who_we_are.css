@@ -44,7 +44,7 @@
 
 .icon-with-lines::before,
 .icon-with-lines::after {
-    content: "";
+    content: " ";
     display: inline-block;
     width: 37px;
     border-top: 1.1px solid #D3D3D3;
@@ -232,7 +232,7 @@ button {
 }
 
 
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1200px){
     .who_we_are {
         margin: -10% 0;
     }
